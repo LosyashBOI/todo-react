@@ -1,0 +1,88 @@
+.to-do {
+    width: 476px;
+    min-height: 688px;
+    margin: auto;
+    padding: 25px 8px 0 8px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #202020;
+    background-color: #fff;
+}
+
+.to-do__priority {
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: 100%;
+}
+
+.to-do__list_high {
+    margin-bottom: 12px;
+}
+
+.to-do__form {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.to-do__list-item {
+    position: relative;
+}
+
+.form__input,
+.to-do__list-item {
+    width: 460px;
+    min-height: 45px;
+    padding: 12px;
+    align-items: flex-start;
+    border: 1px solid #989898;
+    border-radius: 6px;
+}
+
+.form__input::placeholder {
+    color: #bbb;
+}
+
+.to-do__list-item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.to-do__list-item_done {
+    background-color: #f4f4f4;
+}
+
+.del-task-btn,
+.form__input-btn {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    width: 21px;
+    height: 21px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url('./img/add-icon.svg');
+    background-repeat: no-repeat;
+}
+
+.checkbox-btn {
+    width: 21px;
+    height: 21px;
+    margin-right: 12px;
+    background-image: url('./img/checkbox-disabled.svg');
+    background-repeat: no-repeat;
+}
+
+.checkbox-btn_done {
+    background-image: url('./img/checkbox-enabled.svg');
+}
+
+.del-task-btn {
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    background-image: url('./img/close-icon.svg');
+}
+
+.to-do__task-descr {
+    max-width: 370px;
+}
